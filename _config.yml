@@ -1,31 +1,40 @@
-# Información general del sitio
 title: "Massive MIMO Blog"
 description: "Divulgación pública de la ciencia — Massive MIMO para 5G y 6G"
 url: "https://gost1706.github.io"
 baseurl: "/massive-mimo-blog"
 
-# Información de autores (para mostrar en cada post)
 authors:
   jaiver:
-    name: "Jaiver Josept Buitrago Graterón"
+    name: "Jaiver"
     avatar: "/assets/images/jaiver.jpg"
     bio: "Estudiante de Ingeniería Electrónica — enfoque en comunicaciones y sistemas Massive MIMO."
     location: "Colombia"
 
-  sebastian:
-    name: "Sebastián [Apellido]"
-    avatar: "/assets/images/sebastian.jpg"
-    bio: "Integrante del grupo de investigación — simulación y análisis de MIMO masivo."
+  julian:
+    name: "Julian"
+    avatar: "/assets/images/julian.jpg"
+    bio: "Simulación y análisis de sistemas Massive MIMO."
     location: "Colombia"
 
-  laura:
-    name: "Laura [Apellido]"
-    avatar: "/assets/images/laura.jpg"
-    bio: "Estudiante de Ingeniería Electrónica — responsable de la parte bibliométrica y multimedia."
+  michel:
+    name: "Michel"
+    avatar: "/assets/images/michel.jpg"
+    bio: "Bibliometría y multimedia aplicada a comunicaciones."
     location: "Colombia"
 
-# Autor principal para portada (puede ser el grupo)
 author:
   name: "Equipo Massive MIMO"
-  bio: "Jaiver, Sebastián y Laura — estudiantes de Ingeniería Electrónica."
+  bio: "Blog desarrollado por Jaiver, Julian y Michel — estudiantes de Ingeniería Electrónica."
   avatar: "/assets/images/bio-photo.jpg"
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# Plugins que usa Minimal Mistakes
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
