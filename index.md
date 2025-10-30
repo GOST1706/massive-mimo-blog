@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 author_profile: true
 title: "Massive MIMO: La revolución de las redes inalámbricas"
 ---
@@ -15,4 +15,21 @@ title: "Massive MIMO: La revolución de las redes inalámbricas"
   </p>
 </section>
 
----
+<!-- Chatbot -->
+<div id="chatbot-loader"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/@botpress/webchat@0.43.0/botpress-webchat.js";
+    s.onload = function() {
+      window.botpressWebChat.init({
+        host: "https://cdn.botpress.cloud/webchat",
+        botId: "massive-mimo-bot",
+        showWidget: true,
+        theme: "dark",
+      });
+    };
+    document.body.appendChild(s);
+  });
+</script>
