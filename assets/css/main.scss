@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minimal-mistakes/skins/default";
+@import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
 
 // 🎨 --- DARK MODE PERSONALIZADO ---
@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
 blockquote {
   border-left: 5px solid #38bdf8;
   background-color: #1e293b;
-  padding: 12px 15px;
+  padding: 12px 5px;
   border-radius: 8px;
   color: #cbd5e1;
 }
