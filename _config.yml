@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 # --- CONFIGURACIÓN BASE DEL BLOG ---
+minimal_mistakes_skin: default
 sass:
   style: compressed
 
@@ -21,7 +22,6 @@ title: "Massive MIMO Blog"
 description: "Divulgación pública de la ciencia — Massive MIMO para 5G y 6G"
 twitter_username: ""
 github_username: "gost1706"
-minimal_mistakes_skin: dark
 search: true
 
 # --- CONFIGURACIÓN DE BUILD ---
