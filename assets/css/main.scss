@@ -7,6 +7,30 @@
 
 // 🎨 --- DARK MODE PERSONALIZADO ---
 
+/* 🎨 Bloque superior (barra del título del sitio o menú) */
+.masthead {
+  background-color: #0f172a; /* Fondo del header */
+  color: #e2e8f0;            /* Texto claro */
+  border-bottom: 2px solid #1e293b; /* línea opcional */
+}
+
+/* 🔹 Título del sitio (viene del _config.yml -> title:) */
+.masthead__title {
+  color: #60a5fa;            /* Azul brillante */
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase; /* opcional: todo mayúsculas */
+}
+
+/* 🔹 Enlaces del menú (si tenés alguno) */
+.masthead__menu-item a {
+  color: #e2e8f0;
+}
+
+.masthead__menu-item a:hover {
+  color: #38bdf8;            /* hover azul */
+}
+
 body {
   background-color: #0c1221; // fondo general (azul oscuro)
   color: #e2e8f0;            // texto claro
