@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 author_profile: true
 title: "Massive MIMO: La revolución de las redes inalámbricas"
 ---
