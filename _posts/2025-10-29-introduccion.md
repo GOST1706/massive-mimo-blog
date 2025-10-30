@@ -1,7 +1,8 @@
 ---
 title: "Introducción a Massive MIMO"
 authors: [jaiver, julian, michel]
-categories: [Conceptos]
+layout: single
+author_profile: true
 ---
 
 **Massive MIMO** (Multiple Input Multiple Output masivo) es una de las tecnologías más revolucionarias de las redes inalámbricas modernas.  
