@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+
+    <!-- Jekyll SEO + Styles -->
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    {% if site.head_scripts %}
+      {% for script in site.head_scripts %}
+        <script src="{{ script | relative_url }}"></script>
+      {% endfor %}
+    {% endif %}
+  </head>
+
+  <body class="{{ page.layout | default: 'default' }}">
+    <!-- Header -->
+    {% include header.html %}
+
+    <!-- Main content -->
+    <main id="main" role="main">
+      {{ content }}
+    </main>
+
+    <!-- Footer -->
+    {% include footer.html %}
+
+    <!-- Chatbot Widget -->
+    <script src="https://cdn.jsdelivr.net/npm/@botpress/webchat@0.43.0/botpress-webchat.js"></script>
+    <script>
+      window.botpressWebChat.init({
+        host: 'https://cdn.botpress.cloud/webchat',
+        botId: 'massive-mimo-bot',
+        showWidget: true,
+        enableReset: true,
+        enableConversationHistory: true,
+        theme: 'dark',
+        stylesheet: 'https://cdn.jsdelivr.net/npm/@botpress/webchat@0.43.0/styles.css'
+      });
+    </script>
+  </body>
+</html>
