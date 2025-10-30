@@ -1,9 +1,13 @@
-<script src="https://cdn.jsdelivr.net/npm/@botpress/webchat@0.43.0/botpress-webchat.js"></script>
+<!-- Botpress Webchat -->
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
 <script>
   window.botpressWebChat.init({
-    host: 'https://cdn.botpress.cloud/webchat',
-    botId: 'massive-mimo-bot',
-    showWidget: true,
+    hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+    messagingUrl: "https://messaging.botpress.cloud",
+    botId: "7ec288c6-b023-42c6-b055-f2a8fd6edede",  // tu Bot ID
+    botName: "Massive MIMO Bot",
+    showCloseButton: true,
+    themeColor: "#007bff",
     enableReset: true,
     enableConversationHistory: true
   });
