@@ -14,3 +14,19 @@ title: "Massive MIMO: La revolución de las redes inalámbricas"
     web.</em></span></blockquote>
   </p>
 </section>
+
+---
+
+<!-- Chatbot Widget -->
+<div id="chat-widget"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@botpress/webchat@0.43.0/botpress-webchat.js"></script>
+<script>
+  window.botpressWebChat.init({
+    host: 'https://cdn.botpress.cloud/webchat',
+    botId: 'massive-mimo-bot',
+    showWidget: true,
+    enableReset: true,
+    enableConversationHistory: true
+  });
+</script>
