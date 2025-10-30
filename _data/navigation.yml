@@ -1,32 +1,9 @@
-# Información general del sitio
-title: "Massive MIMO Blog"
-description: "Divulgación pública de la ciencia — Massive MIMO para 5G y 6G"
-theme: minimal-mistakes-jekyll
-url: "https://tuusuario.github.io"
-baseurl: "/massive-mimo-blog"
-
-# Información de autores (multi-autor)
-authors:
-  jaiver:
-    name: "Jaiver"
-    avatar: "/assets/images/jaiver.jpg"
-    bio: "Estudiante de Ingeniería Electrónica — enfoque en comunicaciones y sistemas Massive MIMO."
-    location: "Colombia"
-
-  julian:
-    name: "Julian"
-    avatar: "/assets/images/julian.jpg"
-    bio: "Integrante del grupo de investigación — simulación y análisis de MIMO masivo."
-    location: "Colombia"
-
-  michel:
-    name: "Michel"
-    avatar: "/assets/images/michel.jpg"
-    bio: "Estudiante de Ingeniería Electrónica — responsable de la parte bibliométrica y multimedia."
-    location: "Colombia"
-
-# Autor grupal (para la portada)
-author:
-  name: "Equipo Massive MIMO"
-  avatar: "/assets/images/bio-photo.jpg"
-  bio: "Blog desarrollado por Jaiver, Julian y Michel — estudiantes de Ingeniería Electrónica."
+main:
+  - title: "Posts"
+    url: /posts/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  - title: "About"
+    url: /about/
