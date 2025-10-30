@@ -9,33 +9,6 @@
 
 /* 🎨 Bloque superior (barra del título del sitio o menú) */
 /* 🎨 Header principal (barra de arriba con el título del sitio) */
-.masthead,
-.site-header {
-  background-color: #0f172a !important; /* fondo oscuro */
-  color: #93b4df !important;            /* texto claro */
-  border-bottom: 2px solid #1e293b !important;
-}
-
-/* 🔹 Título del sitio */
-.masthead__title,
-.site-title {
-  color: #60a5fa !important;            /* azul brillante */
-  font-size: 1.8em !important;
-  font-weight: 700 !important;
-  text-transform: uppercase;
-}
-
-/* 🔹 Enlaces del menú (si tienes alguno arriba) */
-.masthead__menu-item a,
-.site-nav a {
-  color: #405878 !important;
-}
-
-.masthead__menu-item a:hover,
-.site-nav a:hover {
-  color: #38bdf8 !important;
-}
-
 body {
   background-color: #0c1221; // fondo general (azul oscuro)
   color: #e2e8f0;            // texto claro
