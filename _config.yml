@@ -105,7 +105,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-
-kramdown:
-  input: GFM
-  parse_block_html: true
