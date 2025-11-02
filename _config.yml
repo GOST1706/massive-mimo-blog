@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 # --- CONFIGURACIÓN BASE DEL BLOG ---
-minimal_mistakes_skin: default
+minimal_mistakes_skin: dark
 sass:
   style: compressed
 
