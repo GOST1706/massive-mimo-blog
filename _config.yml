@@ -15,8 +15,6 @@
 # in the templates via {{ site.myvariable }}.
 # --- CONFIGURACIÓN BASE DEL BLOG ---
 minimal_mistakes_skin: dark
-sass:
-  style: compressed
 
 title: "Massive MIMO Blog"
 description: "Divulgación pública de la ciencia — Massive MIMO para 5G y 6G"
