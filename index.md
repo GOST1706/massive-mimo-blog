@@ -21,7 +21,7 @@ title: "Massive MIMO: La revolución de las redes inalámbricas"
   window.botpressWebChat.init({
     composerPlaceholder: "Escribe tu mensaje...",
     botConversationDescription: "Asistente sobre Massive MIMO y telecomunicaciones 📡",
-    botId: "7ec288c6-b023-42c6-b055-f2a8fd6edede",
+    botId: '96654f5b-2ad0-4b48-849b-0f8034180caf',
     clientId: "7ec288c6-b023-42c6-b055-f2a8fd6edede",
     hostUrl: "https://cdn.botpress.cloud/webchat/v1",
     messagingUrl: "https://messaging.botpress.cloud",
