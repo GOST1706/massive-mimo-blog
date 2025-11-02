@@ -20,7 +20,7 @@ body {
   transition: none !important;
 }
 
-/* 🔹 Enlaces */
+/* Enlaces */
 a {
   color: #38bdf8;
   transition: 0.2s ease-in-out;
@@ -31,7 +31,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 🔹 Contenido principal */
+/* Contenido principal */
 .page__content,
 .page__hero,
 .page__footer {
@@ -42,13 +42,13 @@ a:hover {
   padding: 0 1.5rem;
 }
 
-/* 🔹 Footer */
+/* Footer */
 .page__footer {
   border-top: 1px solid #1e293b;
   font-size: 0.9rem;
 }
 
-/* 🔹 Títulos */
+/* Títulos */
 h1, h2, h3, h4 {
   color: #60a5fa;
   font-weight: 600;
@@ -67,7 +67,7 @@ h3 {
   font-size: 1.3rem;
 }
 
-/* 🔹 Bloques de cita */
+/* Bloques de cita */
 blockquote {
   border-left: 5px solid #38bdf8;
   background-color: #1e293b;
@@ -78,7 +78,7 @@ blockquote {
   font-size: 12px;
 }
 
-/* 🔹 Código */
+/* Código */
 code, pre {
   background-color: #1e293b;
   color: #facc15;
@@ -86,12 +86,12 @@ code, pre {
   padding: 2px 5px;
 }
 
-/* 🔹 Negritas */
+/* Negritas */
 strong {
   color: #93c5fd;
 }
 
-/* 🔹 Botones */
+/* Botones */
 .btn, .btn--primary {
   background-color: #2563eb;
   color: white;
@@ -104,12 +104,12 @@ strong {
   transform: translateY(-2px);
 }
 
-/* 🔹 Chat flotante Botpress */
+/* Chat flotante Botpress */
 #bp-web-widget {
   z-index: 9999 !important;
 }
 
-/* 🔹 Ajuste general del layout */
+/* Ajuste general del layout */
 .wrapper {
   max-width: 1100px;
   margin: 0 auto;
