@@ -16,8 +16,7 @@ title: "Massive MIMO: La revolución de las redes inalámbricas"
 </section>
 
 <!-- Chatbot -->
-<script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
-<script>
+<script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js">
   window.botpressWebChat.init({
     configUrl: "https://files.bpcontent.cloud/2025/10/30/22/20251030223931-8JGZJHYP.json",
     composerPlaceholder: "Escribe tu mensaje...",
