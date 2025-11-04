@@ -15,8 +15,6 @@
 # in the templates via {{ site.myvariable }}.
 # --- CONFIGURACIÓN BASE DEL BLOG ---
 minimal_mistakes_skin: dark
-after_footer_scripts:
-  - /_includes/custom-scripts.html
 
 
 title: "Massive MIMO Blog"
