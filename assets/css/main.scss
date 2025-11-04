@@ -2,25 +2,21 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minimal-mistakes/skins/dark";
-@import "minimal-mistakes";
+@import "minimal-mistakes"; // usamos el dark skin desde _config.yml
 
-// 🎨 --- DARK MODE PERSONALIZADO ---
+/* 🎨 --- ESTILO PERSONALIZADO MASSIVE MIMO BLOG --- */
 
+/* === General === */
 body {
   background-color: #0c1221;
   color: #e2e8f0;
-  font-size: 15px; // 🔹 Aumenta tamaño base del texto
-  line-height: 1.7;  // 🔹 Mejora legibilidad
-}
-
-.page__content,
-body {
+  font-size: 15px;
+  line-height: 1.7;
   animation: none !important;
   transition: none !important;
 }
 
-/* Enlaces */
+/* === Enlaces === */
 a {
   color: #38bdf8;
   transition: 0.2s ease-in-out;
@@ -31,43 +27,34 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Contenido principal */
+/* === Contenedor principal === */
 .page__content,
 .page__hero,
 .page__footer {
   background-color: #0f172a !important;
   color: #e2e8f0 !important;
-  max-width: 950px; // 🔹 Hace el contenido más ancho
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* Footer */
+/* === Footer === */
 .page__footer {
   border-top: 1px solid #1e293b;
   font-size: 0.9rem;
 }
 
-/* Títulos */
+/* === Títulos === */
 h1, h2, h3, h4 {
   color: #60a5fa;
   font-weight: 600;
   line-height: 1.3;
 }
 
-h1 {
-  font-size: 2.1rem;
-}
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.7rem; }
+h3 { font-size: 1.3rem; }
 
-h2 {
-  font-size: 1.7rem;
-}
-
-h3 {
-  font-size: 1.3rem;
-}
-
-/* Bloques de cita */
+/* === Bloques de cita === */
 blockquote {
   border-left: 5px solid #38bdf8;
   background-color: #1e293b;
@@ -75,10 +62,10 @@ blockquote {
   border-radius: 8px;
   color: #cbd5e1;
   font-style: italic;
-  font-size: 12px;
+  font-size: 0.95rem;
 }
 
-/* Código */
+/* === Código === */
 code, pre {
   background-color: #1e293b;
   color: #facc15;
@@ -86,12 +73,12 @@ code, pre {
   padding: 2px 5px;
 }
 
-/* Negritas */
+/* === Negritas === */
 strong {
   color: #93c5fd;
 }
 
-/* Botones */
+/* === Botones === */
 .btn, .btn--primary {
   background-color: #2563eb;
   color: white;
@@ -104,70 +91,91 @@ strong {
   transform: translateY(-2px);
 }
 
-/* Chat flotante Botpress */
-#bp-web-widget {
+/* === Chat flotante (Botpress) === */
+#bp-web-widget, #botpress-chat {
   z-index: 9999 !important;
 }
 
-/* Ajuste general del layout */
+/* === Ajuste del layout === */
 .wrapper {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* 🎨 Ajustes generales de legibilidad y ancho de contenido */
+/* === Ancho y legibilidad === */
 
-/* --- Aumentar el ancho del panel central (posts y página principal) --- */
-.page,
-.layout--single .page,
-.layout--home .page {
-  max-width: 1050px !important; /* por defecto es ~850px */
+/* 🔹 Página principal (home) */
+.layout--home .archive {
+  max-width: 1100px !important;
   margin: 0 auto;
-  padding: 2rem 2.5rem; /* un poco más de aire a los lados */
+  padding: 2rem 2.5rem;
 }
 
-/* --- Tipografía general (más grande y espaciosa) --- */
-body {
-  font-size: 1.05rem !important; /* tamaño base (default es ~0.9rem) */
-  line-height: 1.8 !important;   /* más aire entre líneas */
-  color: #e2e8f0;                /* texto claro si estás en modo oscuro */
-}
-
-/* --- Texto de párrafos dentro de los posts --- */
-.page__content p {
+/* 🔹 Páginas de posts individuales */
+.layout--single .page__content {
   font-size: 1.1rem;
   line-height: 1.85;
-  margin-bottom: 1.2rem; /* separa párrafos */
+  max-width: 1050px !important;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
 }
 
-/* --- Listas, citas y encabezados secundarios --- */
-.page__content li {
+/* 🔹 Párrafos dentro de los posts */
+.layout--single .page__content p {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  margin-bottom: 1.2rem;
+}
+
+/* 🔹 Listas, citas y encabezados secundarios */
+.layout--single .page__content li {
   margin-bottom: 0.6rem;
 }
 
-.page__content blockquote {
+.layout--single .page__content blockquote {
   font-size: 1rem;
   line-height: 1.7;
   margin: 1.2rem 0;
   padding: 1rem 1.2rem;
 }
 
-.page__content h2,
-.page__content h3 {
+.layout--single .page__content h2,
+.layout--single .page__content h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-/* --- Ajustar la altura del contenedor principal en home --- */
+/* === Ajuste del contenedor general === */
 .archive {
   padding-top: 1.5rem;
   padding-bottom: 2rem;
 }
 
-#botpress-chat {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
+/* === Intro section (página principal) === */
+.intro-section {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin: 2rem auto 3rem auto;
+  max-width: 950px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.intro-section strong {
+  color: #60a5fa;
+  font-size: 1.3rem;
+}
+
+.intro-section blockquote {
+  border-left: 5px solid #38bdf8;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  background: none;
+}
+
+.intro-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #cbd5e1;
 }
