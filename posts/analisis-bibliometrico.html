@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Análisis Bibliométrico y Técnico — MassiveMIMO Blog</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="header-left">
+      <h1><a href="../">MassiveMIMO Blog</a></h1>
+    </div>
+    <div class="header-center">
+      <p>Análisis Bibliométrico</p>
+    </div>
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li><a href="../">Posts</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="posts" style="max-width: 900px; margin: 3rem auto; padding: 0 1rem;">
+      <article style="background: #1e293b; border-radius: 12px; padding: 2rem; box-shadow: 0 8px 25px rgba(0,0,0,0.25); transition: 0.2s ease-in-out;">
+        <h1 style="color: #818cf8; margin-bottom: 1rem;">Análisis Bibliométrico y Técnico del Massive MIMO</h1>
+        <p style="color: #cbd5e1; margin-bottom: 2rem;">
+          <em>El presente análisis forma parte del Reto ABET SO7, realizado en la materia de Comunicaciones II de la UIS, usando aprendizaje autónomo para estudiar Massive MIMO.</em>
+        </p>
+
+        <div class="post-content" style="color: #e2e8f0; line-height: 1.5;">
+          
+          <!-- Objetivo -->
+          <div style="background: #2a3b52; border-radius: 10px; padding: 1rem; margin-top: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            <h2 style="color: #818cf8; font-size: 1.2rem; margin-bottom: 0.5rem;">🔍 Objetivo del análisis</h2>
+            <p>Identificar las principales líneas de investigación y los avances recientes en Massive MIMO mediante un estudio bibliométrico y técnico de publicaciones indexadas en Scopus (2016–2025) procesadas con VOSviewer.</p>
+          </div>
+
+          <!-- Metodología -->
+          <div style="background: #2a3b52; border-radius: 10px; padding: 1rem; margin-top: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            <h2 style="color: #818cf8; font-size: 1.2rem; margin-bottom: 0.5rem;">🧭 Metodología</h2>
+            <ol style="margin-left: 1.2rem;">
+              <li><strong>Recolección de datos:</strong> Búsqueda avanzada en Scopus con palabras clave como `Massive MIMO`, `5G`, `channel estimation`, y `beamforming`.</li>
+              <li><strong>Depuración y análisis:</strong> Exportación a VOSviewer para construir mapas de co-ocurrencias entre autores, países y palabras clave.</li>
+              <li><strong>Clasificación en clústeres:</strong> Cuatro clústeres temáticos (verde, rojo, azul, amarillo) representando líneas principales de investigación.</li>
+            </ol>
+            <p align="center" style="margin-top: 1rem;">
+              <img src="../assets/images/mapa_bibliometrico.jpg" 
+                   alt="Mapa bibliométrico generado con VOSviewer" 
+                   width="80%" style="border-radius: 15px; box-shadow:0 4px 15px rgba(0,0,0,0.3);">
+            </p>
+          </div>
+
+          <!-- Clústeres -->
+          <div style="background: #2a3b52; border-radius: 10px; padding: 1rem; margin-top: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            <h2 style="color: #818cf8; font-size: 1.2rem; margin-bottom: 0.5rem;">🧩 Principales Clústeres Identificados</h2>
+
+            <div style="background: #1e293b; border-radius: 8px; padding: 0.8rem; margin-top: 0.8rem;">
+              <h3 style="color: #818cf8; margin-bottom: 0.3rem;">🟩 Clúster Verde — Estimación de Canal y Pilot Contamination</h3>
+              <p>Investigaciones sobre contaminación de pilotos y estimación precisa del canal en sistemas con grandes arreglos de antenas. El reto: mejorar calidad sin aumentar overhead de señalización.</p>
+            </div>
+
+            <div style="background: #1e293b; border-radius: 8px; padding: 0.8rem; margin-top: 0.8rem;">
+              <h3 style="color: #818cf8; margin-bottom: 0.3rem;">🟥 Clúster Rojo — Eficiencia Energética y Asignación de Potencia</h3>
+              <p>Optimización energética en transmisores y receptores, balanceando rendimiento y consumo eléctrico, clave para sistemas sostenibles en 6G.</p>
+            </div>
+
+            <div style="background: #1e293b; border-radius: 8px; padding: 0.8rem; margin-top: 0.8rem;">
+              <h3 style="color: #818cf8; margin-bottom: 0.3rem;">🟦 Clúster Azul — Arquitecturas Híbridas y Hardware</h3>
+              <p>Diseño de arquitecturas híbridas analógico-digitales, manejo de cientos de antenas sin requerir cadena RF por elemento. Destaca precodificación híbrida y beamforming analógico.</p>
+            </div>
+
+            <div style="background: #1e293b; border-radius: 8px; padding: 0.8rem; margin-top: 0.8rem;">
+              <h3 style="color: #818cf8; margin-bottom: 0.3rem;">🟨 Clúster Amarillo — Nuevas Tendencias y Aplicaciones</h3>
+              <p>Agrupa términos emergentes como RIS, mmWave MIMO y Machine Learning aplicado al control adaptativo de canales.</p>
+            </div>
+          </div>
+
+          <!-- Implicaciones Técnicas -->
+          <div style="background: #2a3b52; border-radius: 10px; padding: 1rem; margin-top: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            <h2 style="color: #818cf8; font-size: 1.2rem; margin-bottom: 0.5rem;">⚙️ Implicaciones Técnicas</h2>
+            <ul style="margin-left: 1.2rem;">
+              <li>Mayor eficiencia espectral por reutilización espacial.</li>
+              <li>Reducción en la latencia de red mediante precodificación masiva.</li>
+              <li>Implementaciones más sostenibles energéticamente.</li>
+            </ul>
+          </div>
+
+          <!-- Conclusiones -->
+          <div style="background: #2a3b52; border-radius: 10px; padding: 1rem; margin-top: 1rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+            <h2 style="color: #818cf8; font-size: 1.2rem; margin-bottom: 0.5rem;">🧠 Conclusiones</h2>
+            <p>Massive MIMO es una línea de investigación madura pero aún en evolución, con nuevos enfoques centrados en eficiencia energética, aprendizaje automático, integración con RIS y arquitecturas híbridas, y mejora en estimación y gestión del canal. Esto consolida Massive MIMO como pilar tecnológico para redes 6G.</p>
+            <blockquote style="border-left: 4px solid #6366f1; padding-left: 1rem; color: #cbd5e1; margin: 1rem 0;">
+              "El conocimiento no se limita a leer papers, sino a entender cómo se conectan entre sí." — Equipo Massive MIMO
+            </blockquote>
+          </div>
+
+        </div>
+
+        <!-- Navegación flechas -->
+        <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+          <a href="desafios.html" style="color: #818cf8; text-decoration: none; font-weight: bold;">← Post anterior</a>
+          <a href="mini-caso.html" style="color: #818cf8; text-decoration: none; font-weight: bold;">Siguiente post →</a>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Massive MIMO Blog — JaiverBuitrago, JulianSanabria y MichelSaenz</p>
+    <div id="botpress-chat"></div>
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/10/30/22/20251030223931-JUNKJG0X.js" defer></script>
+  </footer>
+</body>
+</html>

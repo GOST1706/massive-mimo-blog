@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Caso: Beam Sweeping y SNR — MassiveMIMO Blog</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-left">
+      <h1><a href="../">MassiveMIMO Blog</a></h1>
+    </div>
+    <div class="header-center">
+      <p>Mini Caso</p>
+    </div>
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li><a href="../">Posts</a></li>
+          <li><a href="#">Sobre Nosotros</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="posts" style="max-width: 900px; margin: 3rem auto; padding: 0 1rem;">
+      <article style="background: #1e293b; border-radius: 12px; padding: 2rem; box-shadow: 0 8px 25px rgba(0,0,0,0.25); transition: 0.2s ease-in-out;">
+        <h1 style="color: #818cf8; margin-bottom: 1rem;">Mini Caso: Beam Sweeping y SNR</h1>
+        <p style="color: #cbd5e1; margin-bottom: 2rem;">
+          <em>Simulación de barrido de haces y análisis de SNR vs número de antenas para un usuario peatonal.</em>
+        </p>
+
+        <div class="post-content" style="color: #e2e8f0; line-height: 1.8;">
+          <p>Este mini caso ilustra cómo Massive MIMO mejora la señal de un usuario mediante <strong>beam sweeping</strong> y cómo la <strong>SNR</strong> y la <strong>eficiencia espectral</strong> crecen con el número de antenas.</p>
+
+          <div class="mini-card" style="background: #2a3b52; border-radius: 10px; padding: 1rem; margin: 1rem 0;">
+            <h2 style="color: #6366f1; font-size: 1.1rem; margin-bottom: 0.5rem;">Código MATLAB</h2>
+            <p>Puedes descargar el script completo para ejecutar la simulación:</p>
+            <a href="../assets/beam_sweeping.m" download 
+               style="color: #818cf8; font-weight: bold; text-decoration: none; background: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; display: inline-block; margin-bottom: 1rem;">
+              Descargar beam_sweeping.m
+            </a>
+
+            <pre style="background: #111827; color: #e2e8f0; padding: 1rem; border-radius: 6px; overflow-x: auto;">
+%% Script de Simulación de Massive MIMO
+clc; clear; close all;
+Pt_dBm = 20;
+Nt_array = [4,8,16,32,64,128,256];
+ue_angle_deg = 30;
+beam_sweep_angles_deg = -90:5:90;
+% ... resto del código resumido para visualización
+            </pre>
+          </div>
+
+          <p>El script muestra el barrido de haces, la selección del mejor haz para el usuario y el cálculo de SNR y eficiencia espectral para distintos tamaños de arreglo. Esto permite comprender la ganancia de antena (array gain) y la eficiencia del beamforming.</p>
+
+        </div>
+
+        <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
+          <a href="analisis-bibliometrico.html" style="color: #818cf8; text-decoration: none; font-weight: bold;">← Post Análisis Bibliométrico</a>
+          <a href="../" style="color: #818cf8; text-decoration: none; font-weight: bold;">Volver al listado de posts</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Massive MIMO Blog — JaiverBuitrago, JulianSanabria y MichelSaenz</p>
+    <div id="botpress-chat"></div>
+    <script src="https://cdn.botpress.cloud/webchat/v3.3/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/10/30/22/20251030223931-JUNKJG0X.js" defer></script>
+  </footer>
+</body>
+</html>
