@@ -115,3 +115,52 @@ strong {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+/* 🎨 Ajustes generales de legibilidad y ancho de contenido */
+
+/* --- Aumentar el ancho del panel central (posts y página principal) --- */
+.page,
+.layout--single .page,
+.layout--home .page {
+  max-width: 1050px !important; /* por defecto es ~850px */
+  margin: 0 auto;
+  padding: 2rem 2.5rem; /* un poco más de aire a los lados */
+}
+
+/* --- Tipografía general (más grande y espaciosa) --- */
+body {
+  font-size: 1.05rem !important; /* tamaño base (default es ~0.9rem) */
+  line-height: 1.8 !important;   /* más aire entre líneas */
+  color: #e2e8f0;                /* texto claro si estás en modo oscuro */
+}
+
+/* --- Texto de párrafos dentro de los posts --- */
+.page__content p {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  margin-bottom: 1.2rem; /* separa párrafos */
+}
+
+/* --- Listas, citas y encabezados secundarios --- */
+.page__content li {
+  margin-bottom: 0.6rem;
+}
+
+.page__content blockquote {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 1.2rem 0;
+  padding: 1rem 1.2rem;
+}
+
+.page__content h2,
+.page__content h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* --- Ajustar la altura del contenedor principal en home --- */
+.archive {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
