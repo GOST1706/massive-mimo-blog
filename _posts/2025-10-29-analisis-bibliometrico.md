@@ -5,20 +5,13 @@ layout: single
 author_profile: true
 ---
 
-<section style="text-align: justify;">
-
-El presente análisis forma parte del **Reto ABET SO7**, desarrollado en la materia de **Comunicaciones II** de la **Universidad Industrial de Santander (UIS)**.  
-El objetivo principal fue aplicar estrategias de **aprendizaje autónomo** para comprender las tendencias actuales de investigación en **Massive MIMO (Multiple Input Multiple Output masivo)**, una tecnología fundamental para las redes **5G y 6G**.
-
-</section>
+El presente análisis forma parte del **Reto ABET SO7**, desarrollado en la materia de **Comunicaciones II** de la **Universidad Industrial de Santander (UIS)**. Para su realización aplicaron estrategias de **aprendizaje autónomo** para comprender las tendencias actuales de investigación en **Massive MIMO (Multiple Input Multiple Output masivo)**, una tecnología fundamental para las redes **5G y 6G**.
 
 ---
 
 ## 🔍 Objetivo del análisis
 
 El propósito fue identificar las principales líneas de investigación y los avances recientes en **Massive MIMO**, a través de un estudio **bibliométrico y técnico** de publicaciones indexadas en **Scopus (2016–2025)**, procesadas con **VOSviewer**.
-
-> Esta combinación permitió visualizar cómo se relacionan los temas clave del campo, evidenciando los enfoques más activos en la comunidad científica internacional.
 
 ---
 
@@ -35,7 +28,8 @@ El propósito fue identificar las principales líneas de investigación y los av
    El software generó **cuatro clústeres temáticos** representados por colores (verde, rojo, azul y amarillo), cada uno reflejando una línea principal de investigación.
 
 <p align="center">
-  <img src="/assets/images/mapa_bibliometrico.jpg" alt="Mapa bibliométrico generado con VOSviewer" width="80%">
+  <img src="{{ '/assets/images/mapa_bibliometrico.jpg' | relative_url }}" 
+       alt="Mapa bibliométrico generado con VOSviewer" width="80%">
 </p>
 
 ---
