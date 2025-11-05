@@ -164,3 +164,80 @@ footer {
 #bp-web-widget, #botpress-chat {
   z-index: 9999 !important;
 }
+
+/* === Sobre Nosotros === */
+
+.about-section {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  color: #e2e8f0;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #60a5fa;
+  margin-bottom: 1rem;
+}
+
+.about-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+.about-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.about-card:hover {
+  background: rgba(45, 55, 72, 0.8);
+  transform: translateY(-5px);
+}
+
+.about-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #60a5fa;
+  margin-right: 1.5rem;
+}
+
+.about-card .info h3 {
+  margin: 0;
+  color: #60a5fa;
+  font-size: 1.2rem;
+}
+
+.about-card .info p {
+  margin: 0.3rem 0 0 0;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+/* 🔹 Responsive */
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-card img {
+    margin: 0 0 1rem 0;
+  }
+}
