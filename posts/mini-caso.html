@@ -12,7 +12,7 @@
       <h1><a href="../">MassiveMIMO Blog</a></h1>
     </div>
     <div class="header-center">
-      <p>Mini Caso</p>
+      <p>Mini Caso Tecnico</p>
     </div>
     <div class="header-right">
       <nav>
@@ -33,33 +33,79 @@
         </p>
 
         <div class="post-content" style="color: #e2e8f0; line-height: 1.8;">
-          <p>Este mini caso ilustra cómo Massive MIMO mejora la señal de un usuario mediante <strong>beam sweeping</strong> y cómo la <strong>SNR</strong> y la <strong>eficiencia espectral</strong> crecen con el número de antenas.</p>
+          <p>Este mini caso demuestra la aplicación práctica de <strong>Massive MIMO</strong> en un entorno con un usuario peatonal, donde se analiza cómo el <strong>beam sweeping</strong> permite detectar el ángulo del usuario y cómo la <strong>SNR</strong> y la <strong>eficiencia espectral</strong> aumentan con el número de antenas (<em>Nt</em>).</p>
 
-          <div class="mini-card" style="background: #2a3b52; border-radius: 10px; padding: 1rem; margin: 1rem 0;">
-            <h2 style="color: #6366f1; font-size: 1.1rem; margin-bottom: 0.5rem;">Código MATLAB</h2>
-            <p>Puedes descargar el script completo para ejecutar la simulación:</p>
-            <a href="../assets/beam_sweeping.m" download 
-               style="color: #818cf8; font-weight: bold; text-decoration: none; background: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; display: inline-block; margin-bottom: 1rem;">
-              Descargar beam_sweeping.m
-            </a>
+          <h2 style="color:#6366f1;">1. Contexto del Caso</h2>
+          <p>El ejercicio hace parte del <strong>Reto ABET SO7</strong> del curso Comunicaciones II, en el que se busca aplicar los conocimientos adquiridos mediante una simulación realista. Se usa un modelo de canal <strong>LoS (Line of Sight)</strong> y un arreglo <strong>ULA</strong> para evaluar la ganancia de haz y la mejora de rendimiento en un sistema Massive MIMO de múltiples antenas.</p>
 
-            <pre style="background: #111827; color: #e2e8f0; padding: 1rem; border-radius: 6px; overflow-x: auto;">
+          <h2 style="color:#6366f1;">2. Parámetros de Simulación</h2>
+          <ul>
+            <li>Potencia transmitida: 20 dBm</li>
+            <li>Ancho de banda: 10 MHz</li>
+            <li>Pérdidas de propagación: 100 dB</li>
+            <li>Ángulo real del usuario: 30°</li>
+            <li>Número de antenas (<em>Nt</em>): [4, 8, 16, 32, 64, 128, 256]</li>
+            <li>Técnica de precodificación: <em>Maximum Ratio Transmission (MRT)</em></li>
+            <li>Ruido térmico: -174 dBm/Hz</li>
+          </ul>
+
+          <h2 style="color:#6366f1;">3. Código MATLAB</h2>
+          <p>Puedes descargar el script completo para ejecutar la simulación:</p>
+          <a href="../assets/scripts/bean_sweeping.m" download 
+             style="color: #818cf8; font-weight: bold; text-decoration: none; background: #1e293b; padding: 0.5rem 1rem; border-radius: 6px; display: inline-block; margin-bottom: 1rem;">
+            Descargar beam_sweeping.m
+          </a>
+
+          <pre style="background: #111827; color: #e2e8f0; padding: 1rem; border-radius: 6px; overflow-x: auto;">
 %% Script de Simulación de Massive MIMO
 clc; clear; close all;
 Pt_dBm = 20;
 Nt_array = [4,8,16,32,64,128,256];
 ue_angle_deg = 30;
 beam_sweep_angles_deg = -90:5:90;
-% ... resto del código resumido para visualización
-            </pre>
-          </div>
+% Cálculo de SNR y eficiencia espectral para cada Nt
+% Uso de MRT y barrido angular de -90° a +90°
+...
+          </pre>
 
-          <p>El script muestra el barrido de haces, la selección del mejor haz para el usuario y el cálculo de SNR y eficiencia espectral para distintos tamaños de arreglo. Esto permite comprender la ganancia de antena (array gain) y la eficiencia del beamforming.</p>
+          <h2 style="color:#6366f1;">4. Resultados de la Simulación</h2>
+          <h3 style="color:#94a3b8;">a) Simulación de Beam Sweeping (Nt = 64)</h3>
+          <figure style="margin: 1rem 0;">
+            <img src="../assets/images/MIMO.png" alt="Simulación de Beam Sweeping" style="width:100%; border-radius:8px;">
+            <figcaption style="text-align:center; color:#cbd5e1; font-size:0.9rem; margin-top:0.5rem;">
+              Figura 1. Simulación de Beam Sweeping para Nt = 64. El pico máximo de SNR coincide con el ángulo real del usuario (30°).
+            </figcaption>
+          </figure>
 
+          <p>El sistema barre los ángulos desde -90° hasta +90° y encuentra el haz con máxima potencia (línea negra). La coincidencia entre el pico de SNR y el ángulo real del usuario (línea roja discontinua) demuestra la correcta detección direccional del usuario peatonal.</p>
+          <p>Fuera del haz óptimo, la SNR cae drásticamente (hasta -200 dB), evidenciando la fuerte selectividad direccional del beamforming.</p>
+
+          <h3 style="color:#94a3b8;">b) Relación entre SNR y Número de Antenas</h3>
+          <figure style="margin: 1rem 0;">
+            <img src="../assets/images/MIMO2.png" alt="SNR y Eficiencia Espectral vs Nt" style="width:100%; border-radius:8px;">
+            <figcaption style="text-align:center; color:#cbd5e1; font-size:0.9rem; margin-top:0.5rem;">
+              Figura 2. Relación entre SNR y eficiencia espectral con el número de antenas. Se observa un crecimiento casi lineal de ambas métricas en escala logarítmica.
+            </figcaption>
+          </figure>
+
+          <p>Al aumentar el número de antenas, la <strong>SNR</strong> crece casi linealmente, validando el principio de <em>array gain</em>. De igual forma, la <strong>eficiencia espectral</strong> aumenta, superando los 15 b/s/Hz para Nt = 256, lo cual confirma la capacidad del Massive MIMO para optimizar el uso del espectro.</p>
+
+          <h2 style="color:#6366f1;">5. Interpretación Técnica</h2>
+          <p>Los resultados concuerdan con los hallazgos teóricos del análisis bibliométrico: la precisión de la <em>estimación de canal (CSI)</em> y el diseño del <em>beamformer</em> son fundamentales para maximizar el rendimiento del sistema. El incremento de Nt no solo mejora la ganancia direccional sino también la eficiencia energética y la tasa alcanzable (<em>achievable rate</em>).</p>
+
+          <h2 style="color:#6366f1;">6. Conclusiones</h2>
+          <ul>
+            <li>El <strong>beam sweeping</strong> permite localizar usuarios de forma precisa mediante la maximización de la SNR.</li>
+            <li>Incrementar el número de antenas mejora la <strong>SNR</strong> y la <strong>eficiencia espectral</strong>, confirmando las ventajas de Massive MIMO.</li>
+            <li>En escenarios peatonales, el canal es lo suficientemente estable para mantener un haz óptimo durante varios instantes de tiempo.</li>
+            <li>El modelo demuestra la importancia de la <em>precodificación híbrida</em> y la <em>optimización energética</em> en redes 5G y 6G.</li>
+          </ul>
+
+          <p style="margin-top:1rem;">En conjunto, el mini caso muestra cómo Massive MIMO logra una transmisión más robusta y eficiente, reforzando su papel clave en las <strong>comunicaciones inalámbricas de nueva generación</strong>.</p>
         </div>
 
         <div style="display: flex; justify-content: space-between; margin-top: 2rem;">
-          <a href="analisis-bibliometrico.html" style="color: #818cf8; text-decoration: none; font-weight: bold;">← Post Análisis Bibliométrico</a>
+          <a href="analisis-bibliometrico.html" style="color: #818cf8; text-decoration: none; font-weight: bold;">← Post anterior</a>
           <a href="../" style="color: #818cf8; text-decoration: none; font-weight: bold;">Volver al listado de posts</a>
         </div>
       </article>
